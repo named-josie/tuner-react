@@ -1,6 +1,6 @@
 nav {
     height: 100%;
-    width: 120px;
+    width: 150px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -9,7 +9,8 @@ nav {
     background: linear-gradient(149deg, rgba(141,9,255,1) 7%, rgba(0,212,255,1) 100%);
     overflow-x: hidden;
     padding-top: 20px;
-  
+    text-align: center;
+   
   }
 
 

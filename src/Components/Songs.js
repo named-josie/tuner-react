@@ -17,18 +17,23 @@ export default function Songs() {
     <div className="Songs">
       <section>
         <h1>Songs List</h1>
-        <hr />
+        <hr></hr>
+        <br></br>
         <table>
+       
           <thead>
+         
             <tr>
               <th>Name</th>
               <th>Artist</th>
               <th>Album</th>
               <th>Favorite</th>
-
             </tr>
+           
           </thead>
+       
           <tbody>
+
             {songs.map((song) => {
               return <Song key={song.id} song={song} />;
             })}

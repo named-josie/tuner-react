@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #98d1ff;
+  background: linear-gradient(149deg, #98d1ff 7%, #f18eff 100%);
+
+
 }
 
 code {
@@ -17,17 +21,28 @@ code {
 table {
   width: 50%;
   margin: auto;
+ 
 }
 
 td {
   text-align: center;
+  font-size: 18px;
+  
 }
 
 tbody td:not(td:first-of-type):hover {
   transform: scale(1.05);
   opacity: 0.9;
+  
 }
 
 tbody tr:nth-child(even) {
   background: #be9ee9;
+  
+}
+
+th {
+  font-size: 40px;
+  color:  rgb(9, 107, 255);
+  padding-bottom: 10px;
 }
