@@ -81,7 +81,7 @@ export default function NewSong() {
           onChange={onChange}
         />
 
-        <input id="submit" type="submit" value="Create New Song" />
+        <input id="submit" type="submit" value="New Song" />
       </form>
     </div>
   );

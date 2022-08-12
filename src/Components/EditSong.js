@@ -15,6 +15,19 @@ export default function EditSong() {
     is_favorite: false,
   });
 
+  const updateSong = (updatedSong) => {
+    axios
+      .put(`${API}/songs/${id}`, updatedSong)
+      .then(
+        () => {
+          navigate(`/songs/${id}`);
+        },
+        (error) => console.error(error)
+      )
+      .catch((c) => console.warn("catch", c));
+  };
+
+
   const handleTextChange = (event) => {
     setSong({ ...song, [event.target.id]: event.target.value });
   };
@@ -32,14 +45,7 @@ export default function EditSong() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios
-      .put(`${API}/songs/${id}`, song)
-      .then(() => {
-        navigate(`/songs/${id}`);
-      })
-      .catch((err) => {
-        console.warn(err);
-      });
+    updateSong(song, id);
   };
 
   const onChange = () => {
@@ -48,7 +54,7 @@ export default function EditSong() {
 
   return (
     <div className="New">
-      <form onSubmit={handleSubmit} autoComplete="off">
+      <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input
           id="name"
@@ -88,11 +94,11 @@ export default function EditSong() {
         <input
           id="is_favorite"
           type="checkbox"
-          name="favorite"
           value={song.is_favorite}
-          onChange={onChange}
+          onChange={onChange} 
         />
-        <input id="submit" type="submit" value="Edit Song" />
+        <br/>
+        <input type="submit" />
       </form>
       <Link to={`/songs/${id}`}>
         <button>Back</button>

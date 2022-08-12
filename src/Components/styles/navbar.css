@@ -1,33 +1,22 @@
-/* nav {
+nav {
     height: 100%;
     width: 120px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background: rgb(141,9,255);
+    background: linear-gradient(149deg, rgba(141,9,255,1) 7%, rgba(0,212,255,1) 100%);
     overflow-x: hidden;
     padding-top: 20px;
   
-  } */
-
-
-a:link { text-decoration: none; 
-color: #4eded4;
-}
-
-a:visited {
-    color: #1d13de;
   }
 
-.logo {
-    height: 40px;
-}
 
 .new-button{
-    padding: 15px;
-   background-color: #1269ff;
+    padding: 10px;
+    background: #0990ff;
+    background: linear-gradient(149deg, #0990ff 7%, #e000ff 100%);
    border-radius: 10px;
-   font-family: 'Michroma', sans-serif;
 color: white;
 }
