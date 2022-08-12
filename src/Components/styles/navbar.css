@@ -1,0 +1,33 @@
+nav {
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  
+  }
+
+
+a:link { text-decoration: none; 
+color: #4eded4;
+}
+
+a:visited {
+    color: #1d13de;
+  }
+
+.logo {
+    height: 40px;
+}
+
+.new-button{
+    padding: 15px;
+   background-color: #1269ff;
+   border-radius: 10px;
+   font-family: 'Michroma', sans-serif;
+color: white;
+}
