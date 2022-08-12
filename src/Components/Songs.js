@@ -9,7 +9,6 @@ export default function Songs() {
   const [songs, setSongs] = useState([]);
   useEffect(() => {
     axios.get(`${API}/songs`).then((res) => {
-      console.log(`this is the result: ${API}/songs`)
       setSongs(res.data);
     });
   }, []);
@@ -23,8 +22,10 @@ export default function Songs() {
           <thead>
             <tr>
               <th>Name</th>
+              <th>Artist</th>
               <th>Album</th>
               <th>Favorite</th>
+
             </tr>
           </thead>
           <tbody>
