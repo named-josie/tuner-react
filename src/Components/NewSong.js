@@ -54,7 +54,7 @@ export default function NewSong() {
           value={song.artist}
           type="text"
           onChange={handleTextChange}
-          placeholder="Name"
+          placeholder="Aritst Name"
           required
         />
         <label htmlFor="album">Album</label>

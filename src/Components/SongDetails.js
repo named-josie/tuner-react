@@ -33,26 +33,26 @@ export default function SongDetails() {
   };
 
   return (
-    <div className='show_details'>
-      <h2>Name: {song.name}</h2>
-      <h2>Artist: {song.artist}</h2>
-      <h2>Album: {song.album}</h2>
-      <h2>Time: {song.time}</h2>
-      <h2>Favorite: {song.is_favorite ? '⭐' : '❌'}</h2>
+    <div className='show'>
+      <h2 className='show_p' > <span>Name:</span> {song.name}</h2>
+      <h2 className='show_p'> <span>Artist:</span>  {song.artist}</h2>
+      <h2 className='show_p'> <span>Album:</span> {song.album}</h2>
+      <h2 className='show_p'> <span>Time:</span> {song.time}</h2>
+      <h2 className='show_p'> <span>Favorite:</span> {song.is_favorite ? '⭐' : '❌'}</h2>
 
       <div className='showNavigation'>
         <div>
           <Link to={`/songs`}>
-            <button>Back</button>
+            <button className='show_button' >Back</button>
           </Link>
         </div>
         <div>
           <Link to={`/songs/${song.id}/edit`}>
-            <button>Edit</button>
+            <button className='show_button'>Edit</button>
           </Link>
         </div>
         <div>
-          <button onClick={handleDelete}>Delete</button>
+          <button className='show_button' onClick={handleDelete}>Delete</button>
         </div>
       </div>
     </div>
