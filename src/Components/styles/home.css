@@ -1,0 +1,31 @@
+.home-page {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    justify-content: center;
+    border-radius: 5px;
+    padding-bottom: 15px;
+   
+
+}
+
+
+
+.home-title {
+    padding-top: 10px;
+    font-size: 60px;
+    color: #52A5EF;
+    text-align: center;
+    padding-bottom: 1em;
+    margin: auto;
+    font-family: 'Henny Penny', cursive;
+}
+
+
+.home-image {
+margin: auto;
+display: block;  
+padding-bottom: 20px;
+height: 20%;
+}
+

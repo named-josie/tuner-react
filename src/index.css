@@ -21,7 +21,10 @@ code {
 table {
   width: 50%;
   margin: auto;
- 
+  color: #7c64c3;
+  font-weight: 600;
+  font-family: 'Merienda', cursive;
+
 }
 
 td {
@@ -51,7 +54,7 @@ th {
 
 .glow {
   font-size: 70px;
-  color: #bfaafd;
+  color: #7c64c3;
   text-align: center;
   
 }
