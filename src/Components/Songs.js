@@ -16,14 +16,14 @@ export default function Songs() {
   return (
     <div className="Songs">
       <section>
-        <h1>Songs List</h1>
+       
         <hr></hr>
         <br></br>
         <table>
        
           <thead>
          
-            <tr>
+            <tr className="glow">
               <th>Name</th>
               <th>Artist</th>
               <th>Album</th>

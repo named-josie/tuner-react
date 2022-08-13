@@ -43,6 +43,28 @@ tbody tr:nth-child(even) {
 
 th {
   font-size: 40px;
-  color:  rgb(9, 107, 255);
+  
   padding-bottom: 10px;
+  font-family: 'Italiana', serif;
+  text-decoration: underline;
 }
+
+.glow {
+  font-size: 70px;
+  color: #8a68ef;
+  text-align: center;
+  
+}
+
+
+
+
+
+
+.song-title{
+ color: #be9ee9;
+text-align: center;
+font-size: 30px;
+font-family: 'Henny Penny', cursive;
+}
+
