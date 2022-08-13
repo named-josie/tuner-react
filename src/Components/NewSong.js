@@ -35,10 +35,12 @@ export default function NewSong() {
   };
 
   return (
-    <div className="New">
+    <div className="new">
       <form onSubmit={handleSubmit} autoComplete="off">
         <label htmlFor="name">Name</label>
         <input
+          placeholder="Name of Song"
+          className="text"
           id="name"
           type="text"
           required
@@ -47,33 +49,37 @@ export default function NewSong() {
         />
         <label htmlFor="artist">Artist</label>
         <input
+          className="text"
           id="artist"
           value={song.artist}
           type="text"
           onChange={handleTextChange}
-          placeholder="name"
+          placeholder="Name"
           required
         />
         <label htmlFor="album">Album</label>
         <input
+          className="text"
           id="album"
           type="text"
           name="album"
           value={song.album}
-          placeholder="album"
+          placeholder="Album"
           onChange={handleTextChange}
         />
         <label htmlFor="time">Time</label>
         <input
+          className="text"
           id="time"
           type="text"
           name="time"
           value={song.time}
           onChange={handleTextChange}
-          placeholder="time"
+          placeholder="0:00"
         />
         <label htmlFor="favorite">Favorite</label>
         <input
+          className="checkbox"
           id="is_favorite"
           type="checkbox"
           name="favorite"
@@ -81,7 +87,7 @@ export default function NewSong() {
           onChange={onChange}
         />
 
-        <input id="submit" type="submit" value="New Song" />
+        <input className="button" id="submit" type="submit" value="New Entry" />
       </form>
     </div>
   );
