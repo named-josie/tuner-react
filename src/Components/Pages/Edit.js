@@ -1,10 +1,10 @@
 import EditSong from "../EditSong"
-import "../styles/navbar.css"
+import '../styles/edit.css'
 
 export default function Edit() {
   return ( 
    <div className="Edit">
-    <h1>Edit</h1>
+    <h1 className="edit-song">Edit Entry</h1>
     <EditSong />
   </div>
 );

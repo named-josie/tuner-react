@@ -41,7 +41,7 @@ export default function Songs() {
         </table>
       </section>
       <br />
-      <button>
+      <button className="button">
         <Link to={"/"}>Back</Link>
       </button>
     </div>

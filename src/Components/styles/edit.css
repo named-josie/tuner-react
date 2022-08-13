@@ -1,0 +1,56 @@
+.edit{
+    display: flex;
+    align-items: center;    
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+      
+}
+
+
+label{
+    font-size: large;
+    padding: 1%;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+}
+
+.text{
+   width: 40%;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+   margin-top: 3%;
+   padding: 1%;
+   color: rgb(123, 0, 255);
+font-family: 'Merienda', cursive;
+font-size: 18px;
+  }
+
+ .button{
+    width: 20%;
+    margin-top: 30px;
+    font-family: 'Merienda', cursive;
+    padding: 10px;
+    background: #0990ff;
+    background: linear-gradient(149deg, #0990ff 7%, #e000ff 100%);
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    margin-left: 30%;
+}
+
+ .checkbox {
+    width: 40px;
+  height: 20px;
+ }
+
+ .edit-song{
+    color: #9f63ec;
+   text-align: center;
+   font-size: 50px;
+   font-family: 'Henny Penny', cursive;
+   }

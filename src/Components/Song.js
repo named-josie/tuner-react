@@ -7,7 +7,7 @@ export default function Song({ song }) {
     <tr className='allsongs'>
     
       <td>{song.name}</td>
-      <td className='Song'>
+      <td className='song'>
         <Link to={`/songs/${song.id}`}>{song.artist}</Link>
       </td>
       <td>{song.album}</td> 

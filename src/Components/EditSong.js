@@ -53,10 +53,11 @@ export default function EditSong() {
   };
 
   return (
-    <div className="New">
+    <div className="edit">
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input
+          className="text"
           id="name"
           type="text"
           required
@@ -65,6 +66,7 @@ export default function EditSong() {
         />
         <label htmlFor="artist">Artist</label>
         <input
+           className="text"
           id="artist"
           value={song.artist}
           type="text"
@@ -74,6 +76,7 @@ export default function EditSong() {
         />
         <label htmlFor="album">Album</label>
         <input
+           className="text"
           id="album"
           type="text"
           name="album"
@@ -83,6 +86,7 @@ export default function EditSong() {
         />
         <label htmlFor="time">Time</label>
         <input
+           className="text"
           id="time"
           type="text"
           name="time"
@@ -92,17 +96,20 @@ export default function EditSong() {
         />
         <label htmlFor="favorite">Favorite</label>
         <input
+          className="checkbox"
           id="is_favorite"
           type="checkbox"
           value={song.is_favorite}
           onChange={onChange} 
         />
         <br/>
-        <input type="submit" />
-      </form>
-      <Link to={`/songs/${id}`}>
-        <button>Back</button>
+        <input className="button" type="submit" />
+        <br/>
+        <Link to={`/songs/${id}`}>
+        <button className="button">Back</button>
       </Link>
+      </form>
+     
     </div>
   );
 }
