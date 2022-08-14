@@ -4,7 +4,7 @@ export default function FourOFour() {
     return (
       <div className="nope">
         <h1>NOTHING TO SEE HERE </h1>
-        <img className="FOUR" src="https://i.gifer.com/origin/3f/3fcf565ccc553afcfd89858c97304705.gif" alt="404"></img>
+        <img className="FOUR" src="https://i.pinimg.com/originals/52/49/2d/52492dfd578e53265da207e2903a5ce7.gif" alt="404"></img>
         <button className="new-button">
         <Link to="/">Go Home</Link>
       </button>
