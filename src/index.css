@@ -89,13 +89,19 @@ z-index: 1;
   }
   
 nav{
-  top: 20%;
-  right: 0;
- 
+right: 0;
+position: fixed;
+margin-left: 0%;
+padding-left: 0.1%;
+margin: 0%;
 
 }
+
+h1.header{
+  font-size: 15px;
+}
   
-.new-button {
+button.new-button {
   margin-top: 20%; 
   padding: 5px;
   background: #0990ff;
@@ -103,15 +109,17 @@ nav{
   border-radius: 10px;
   color: white;
   font-family: 'Merienda', cursive;
-  font-size: 10px;
+  font-size: 9px;
+}
+
+img.nav-img{
+  display: none;
 }
 /* ALL SONGS */
   table {
-    width: 20%;
-    margin: auto;
     color: #4406ff;
     font-weight: 600;
-   
+    margin: 0%;
     font-size: 10px;
   
   }
@@ -119,7 +127,7 @@ nav{
   td {
    
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     align-items: center;
     font-family: 'Italiana', serif;
    
@@ -137,7 +145,7 @@ nav{
   }
   
   th {
-    font-size: 15px;
+    font-size: 14px;
     padding-bottom: 5px;
     font-family: 'Italiana', serif;
     text-decoration: underline;
@@ -165,7 +173,7 @@ button.new-button{
   font-size: 14px;
 }
 section{
- margin-left: 26%;
+ margin-left: 26.5%;
  font-size: 1px;
 }
 /* New Page */
