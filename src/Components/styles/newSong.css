@@ -45,6 +45,10 @@ font-family: 'Merienda', cursive;
     margin-left: 30%;
 }
 
+input:hover {
+    color: #D77A9A;
+  }
+
  .checkbox {
     width: 40px;
   height: 20px;

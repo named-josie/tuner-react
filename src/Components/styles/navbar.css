@@ -1,19 +1,22 @@
 nav {
     height: 100%;
-    width: 100px;
+    width: 90px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background: #b571f1;
-    background: linear-gradient(149deg, #b571f1 7%, #00d5ffb5 100%);
+    /* background: #b9c0e4;
+    background: linear-gradient( #b5c2e6 8%, #abc7eb 13%, #a6caed 16%, #e8a7ce 34%, #d5b8d9 56%, #c784e5 76%, #deb5d4 94%); */
     overflow-x: hidden;
     padding-top: 20px;
+    padding-left: 1%;
     text-align: center;
      font-family: 'Merienda', cursive;
-   
+   background: #da6be992;
   }
-
+  nav a:hover {
+    color: #D77A9A;
+  }
 
 .new-button{
   margin-top: 20%; 
@@ -24,6 +27,7 @@ nav {
   color: white;
   font-family: 'Merienda', cursive;
   font-size: 18px;
+  margin: 10%;
 }
 
 a:link {
@@ -36,4 +40,9 @@ a:visited {
 
 img{
   height: 50px;
+}
+
+
+.nav-img{
+opacity: .50;
 }

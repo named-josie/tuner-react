@@ -1,10 +1,10 @@
 body {
   margin: 0;
-  background: #98d1ff;
-  background: linear-gradient(149deg, #98d1ff 7%, #f18eff 100%);
+  background: rgb(185,192,228);
+  background: linear-gradient(124deg, #b9c0e4 1%, #8ed6f8e6 4%, #b5c2e6 8%, #abc7eb 13%, #a6caed 16%, #e8a7ce 34%, #d5b8d9 56%, #c784e5 76%, #deb5d4 94%);
+background-size: 150%;
 
-
-}
+ }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -29,9 +29,13 @@ td {
 }
 
 tbody td:not(td:first-of-type):hover {
+  
   transform: scale(1.05);
   opacity: 0.9;
   
+}
+.link:hover{
+color: #D77A9A;
 }
 
 tbody tr:nth-child(even) {
@@ -72,11 +76,39 @@ font-family: 'Henny Penny', cursive;
 
 .FOUR{
 height: 300px;
-margin-left: 10%;
+margin-left: 20%;
 margin-bottom: 2%;
 position: fixed;
 z-index: 1;
 }
+
+button:hover{
+  color: #D77A9A;
+}
+.back-button{
+  
+  font-size: 30px;
+  width: 20%;
+  margin-top: 30px;
+  font-family: 'Merienda', cursive;
+  padding: 10px;
+  background: #0990ff;
+  background: linear-gradient(149deg, #0990ff 7%, #e000ff 100%);
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  margin-left: 30%;
+  margin-bottom: 1%;
+}
+
+.back-button:link {
+  color: #ffffff;
+}  
+  
+.back-button:visited {
+  color: #000000;
+}
+
 
 @media only screen and (max-width: 468px), only screen and (max-device-width: 768px) and (orientation : portrait) {
   

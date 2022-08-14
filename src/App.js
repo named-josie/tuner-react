@@ -7,6 +7,7 @@ import New from './Components/Pages/New';
 import Show from './Components/Pages/Show';
 import Edit from './Components/Pages/Edit';
 import FourOFour from './Components/Pages/FourOFour';
+import Sidebar from './Components/Sidebar';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
             <Route path='*' element={<FourOFour />} />
           </Routes>
         </main>
+        < Sidebar/>
       </Router>
     </div>
   );

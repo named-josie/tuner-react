@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import Song from "./Song";
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import Song from './Song';
 
-import axios from "axios";
-const API= process.env.REACT_APP_API_URL;
+import axios from 'axios';
+const API = process.env.REACT_APP_API_URL;
 
 export default function Songs() {
   const [songs, setSongs] = useState([]);
@@ -14,26 +14,20 @@ export default function Songs() {
   }, []);
 
   return (
-    <div className="Songs">
+    <div className='Songs'>
       <section>
-       
-      
         <br></br>
         <table>
-       
           <thead>
-         
-            <tr className="glow">
+            <tr className='glow'>
               <th>Name</th>
               <th>Artist</th>
               <th>Album</th>
               <th>Favorite</th>
             </tr>
-           
           </thead>
-       
-          <tbody>
 
+          <tbody>
             {songs.map((song) => {
               return <Song key={song.id} song={song} />;
             })}
@@ -41,10 +35,9 @@ export default function Songs() {
         </table>
       </section>
       <br />
-      <button className="button">
-        <Link to={"/"}>Back</Link>
+      <button className='back-button'>
+        <Link to={'/'}>Back</Link>
       </button>
     </div>
   );
 }
-

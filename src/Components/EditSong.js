@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
-import axios from "axios";
+import { useState, useEffect } from 'react';
+import { useParams, Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -8,10 +8,10 @@ export default function EditSong() {
   const navigate = useNavigate();
   let { id } = useParams();
   const [song, setSong] = useState({
-    name: "",
-    artist: "",
-    album: "",
-    time: "",
+    name: '',
+    artist: '',
+    album: '',
+    time: '',
     is_favorite: false,
   });
 
@@ -22,11 +22,10 @@ export default function EditSong() {
         () => {
           navigate(`/songs/${id}`);
         },
-        (error) => console.error(error)
+        (error) => console.error(error),
       )
-      .catch((c) => console.warn("catch", c));
+      .catch((c) => console.warn('catch', c));
   };
-
 
   const handleTextChange = (event) => {
     setSong({ ...song, [event.target.id]: event.target.value });
@@ -53,65 +52,70 @@ export default function EditSong() {
   };
 
   return (
-    <div className="edit">
-       
+    <div className='edit'>
       <form onSubmit={handleSubmit}>
-        <label className="new-label" htmlFor="name">Name</label>
+        <label className='new-label' htmlFor='name'>
+          Name
+        </label>
         <input
-          className="text"
-          id="name"
-          type="text"
+          className='text'
+          id='name'
+          type='text'
           required
           value={song.name}
           onChange={handleTextChange}
         />
-        <label className="new-label" htmlFor="artist">Artist</label>
+        <label className='new-label' htmlFor='artist'>
+          Artist
+        </label>
         <input
-           className="text"
-          id="artist"
+          className='text'
+          id='artist'
           value={song.artist}
-          type="text"
+          type='text'
           onChange={handleTextChange}
-          placeholder="name"
+          placeholder='name'
           required
         />
-        <label className="new-label" htmlFor="album">Album</label>
+        <label className='new-label' htmlFor='album'>
+          Album
+        </label>
         <input
-           className="text"
-          id="album"
-          type="text"
-          name="album"
+          className='text'
+          id='album'
+          type='text'
+          name='album'
           value={song.album}
-          placeholder="album"
+          placeholder='album'
           onChange={handleTextChange}
         />
-        <label className="new-label" htmlFor="time">Time</label>
+        <label className='new-label' htmlFor='time'>
+          Time
+        </label>
         <input
-           className="text"
-          id="time"
-          type="text"
-          name="time"
+          className='text'
+          id='time'
+          type='text'
+          name='time'
           value={song.time}
           onChange={handleTextChange}
-          placeholder="0:00"
+          placeholder='0:00'
         />
-        <label htmlFor="favorite">Favorite</label>
+        <label htmlFor='favorite'>Favorite</label>
         <input
-          className="checkbox"
-          id="is_favorite"
-          type="checkbox"
+          className='checkbox'
+          id='is_favorite'
+          type='checkbox'
           value={song.is_favorite}
-          onChange={onChange} 
+          onChange={onChange}
         />
-        <br/>
-        <input className="button" type="submit" />
-        <br/>
+        <br />
+        <input className='button' type='submit' />
+        <br />
         <Link to={`/songs/${id}`}>
-        <button className="button">Back</button>
-      </Link>
+          <button className='button'>Back</button>
+        </Link>
       </form>
-     
     </div>
   );
 }
-

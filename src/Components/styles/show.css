@@ -33,6 +33,17 @@ padding-bottom: 1%;
   font-size: 18px;
   margin-left: 30%;
 }
+.show_button:hover {
+  color: #D77A9A;
+}
+
+.show_button:link {
+  color: #ffffff;
+}  
+  
+.show_button:visited {
+  color: #000000;
+}
 
 span {
   color: white;
