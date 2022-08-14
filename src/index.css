@@ -186,7 +186,7 @@ input.text{
  margin-top: 3%;
  padding: 1%;
  margin-left: 10%;
- color: aqua;
+ color: #7b00ff;
 font-family: 'Merienda', cursive;
 }
 
@@ -211,6 +211,7 @@ h1.new-song{
 h1.song-details{
   font-size: 30px;
   margin-left: 13%;
+  margin-top: 10%;
 
 }
 
@@ -226,6 +227,13 @@ div.show{
   font-family: 'Merienda', cursive;
   
 }
+/* Edit Page */
+h1.edit-song {
+font-size: 30px;
+margin-left: 13%;
+margin-top: 10%;
+}
+
 
 }
 

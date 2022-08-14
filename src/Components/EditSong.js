@@ -55,7 +55,7 @@ export default function EditSong() {
   return (
     <div className="edit">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name</label>
+        <label className="new-label" htmlFor="name">Name</label>
         <input
           className="text"
           id="name"
@@ -64,7 +64,7 @@ export default function EditSong() {
           value={song.name}
           onChange={handleTextChange}
         />
-        <label htmlFor="artist">Artist</label>
+        <label className="new-label" htmlFor="artist">Artist</label>
         <input
            className="text"
           id="artist"
@@ -74,7 +74,7 @@ export default function EditSong() {
           placeholder="name"
           required
         />
-        <label htmlFor="album">Album</label>
+        <label className="new-label" htmlFor="album">Album</label>
         <input
            className="text"
           id="album"
@@ -84,7 +84,7 @@ export default function EditSong() {
           placeholder="album"
           onChange={handleTextChange}
         />
-        <label htmlFor="time">Time</label>
+        <label className="new-label" htmlFor="time">Time</label>
         <input
            className="text"
           id="time"
@@ -92,7 +92,7 @@ export default function EditSong() {
           name="time"
           value={song.time}
           onChange={handleTextChange}
-          placeholder="time"
+          placeholder="0:00"
         />
         <label htmlFor="favorite">Favorite</label>
         <input
