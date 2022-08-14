@@ -1,10 +1,5 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background: #98d1ff;
   background: linear-gradient(149deg, #98d1ff 7%, #f18eff 100%);
 
@@ -60,10 +55,6 @@ th {
 }
 
 
-
-
-
-
 .song-title{
  color: #be9ee9;
 text-align: center;
@@ -71,3 +62,175 @@ font-size: 30px;
 font-family: 'Henny Penny', cursive;
 }
 
+
+@media only screen and (max-width: 468px), only screen and (max-device-width: 768px) and (orientation : portrait) {
+  body {
+    margin: 0;
+    background: #98d1ff;
+    width: 100%;
+    display: flex;
+  flex-direction: column;
+  }
+  
+nav{
+  top: 20%;
+  right: 0;
+ 
+
+}
+  
+.new-button {
+  margin-top: 20%; 
+  padding: 5px;
+  background: #0990ff;
+  background: linear-gradient(149deg, #0990ff 7%, #e000ff 100%);
+  border-radius: 10px;
+  color: white;
+  font-family: 'Merienda', cursive;
+  font-size: 10px;
+}
+
+  table {
+    width: 20%;
+    margin: auto;
+    color: #4406ff;
+    font-weight: 600;
+   
+    font-size: 10px;
+  
+  }
+  
+  td {
+   
+    text-align: center;
+    font-size: 12px;
+    align-items: center;
+    font-family: 'Italiana', serif;
+   
+  }
+  
+  tbody td:not(td:first-of-type):hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+    
+  }
+  
+  tbody tr:nth-child(even) {
+    background: #be9ee9;
+    
+  }
+  
+  th {
+    font-size: 15px;
+    padding-bottom: 5px;
+    font-family: 'Italiana', serif;
+    text-decoration: underline;
+  }
+  
+  
+  .song-title{
+   color: #be9ee9;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Henny Penny', cursive;
+  }
+
+  h1 {
+    padding-top: 10px;
+    font-size: 30px;
+    color: #52A5EF;
+    text-align: center;
+    padding-bottom: 1em;
+    margin: auto;
+    font-family: 'Henny Penny', cursive;
+}
+
+button.new-button{
+  font-size: 14px;
+}
+section{
+ margin-left: 26%;
+ font-size: 1px;
+}
+/* New Page */
+div.new{
+  display: flex;
+  align-items: center;    
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 5%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+    
+}
+
+
+label.new-label{
+ font-size: 25px;
+  padding: 1%;
+  width: 10%;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+ margin-top: 3%;
+ padding: 1%;
+ margin-left: 11%;
+
+}
+input.text{
+  width: 65%;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+ margin-top: 3%;
+ padding: 1%;
+ margin-left: 10%;
+ color: aqua;
+font-family: 'Merienda', cursive;
+}
+
+input.button{
+  width: 50%;
+  margin-top: 30px;
+  font-family: 'Merienda', cursive;
+  padding: 10px;
+  background: #0990ff;
+  background: linear-gradient(149deg, #0990ff 7%, #e000ff 100%);
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  margin-left: 30%;
+} 
+h1.new-song{
+  font-size: 30px;
+  margin-left: 13%;
+  margin-top: 10%;
+}
+
+h1.song-details{
+  font-size: 30px;
+  margin-left: 13%;
+
+}
+
+h2.show_p{
+  font-size: 20px;
+  padding: .2%;
+}
+div.show{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  font-family: 'Merienda', cursive;
+  
+}
+
+}
+
+/* @media only screen and (max-width: 320px), only screen and (max-device-width: 320px) and (orientation : portrait) {
+body{
+  
+}
+} */
