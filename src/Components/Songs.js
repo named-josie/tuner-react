@@ -17,7 +17,7 @@ export default function Songs() {
     <div className="Songs">
       <section>
        
-        <hr></hr>
+      
         <br></br>
         <table>
        

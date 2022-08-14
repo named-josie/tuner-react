@@ -34,7 +34,7 @@ export default function SongDetails() {
 
   return (
     <div className='show'>
-        <hr></hr>
+       
       <h2 className='show_p' > <span>Name:</span> {song.name}</h2>
       <h2 className='show_p'> <span>Artist:</span>  {song.artist}</h2>
       <h2 className='show_p'> <span>Album:</span> {song.album}</h2>
