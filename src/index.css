@@ -252,18 +252,27 @@ margin-top: 10%;
 /* Home Page */
 h1.home-title {
   padding-top: 10px;
-  font-size: 30px;
+  font-size: 37px;
   color: #52A5EF;
   text-align: center;
   padding-bottom: 1em;
-  margin-left: 13%;
+  margin-left: 20%;
   font-family: 'Henny Penny', cursive;
 }
 img.home-image {
- height: 80px;
- margin-left: 25%;
- margin-top: 40%;
+height: fit-content;
+margin-top: 59%;
+margin-left: 23%;
   }
+h1.nope{
+  font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  word-wrap: normal;
+  margin-top: 10%;
+  margin-left: 23%;
+
+}  
 
 }
 
