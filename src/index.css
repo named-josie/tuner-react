@@ -233,7 +233,21 @@ font-size: 30px;
 margin-left: 13%;
 margin-top: 10%;
 }
-
+/* Home Page */
+h1.home-title {
+  padding-top: 10px;
+  font-size: 30px;
+  color: #52A5EF;
+  text-align: center;
+  padding-bottom: 1em;
+  margin-left: 13%;
+  font-family: 'Henny Penny', cursive;
+}
+img.home-image {
+ height: 80px;
+ margin-left: 25%;
+ margin-top: 40%;
+  }
 
 }
 
