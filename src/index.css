@@ -62,8 +62,24 @@ font-size: 30px;
 font-family: 'Henny Penny', cursive;
 }
 
+.nope{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Henny Penny', cursive;
+  color: #f28effc6;
+  
+}
+
+.FOUR{
+height: 300px;
+margin-left: 10%;
+margin-bottom: 2%;
+position: fixed;
+z-index: 1;
+}
 
 @media only screen and (max-width: 468px), only screen and (max-device-width: 768px) and (orientation : portrait) {
+  
   body {
     margin: 0;
     background: #98d1ff;
@@ -89,7 +105,7 @@ nav{
   font-family: 'Merienda', cursive;
   font-size: 10px;
 }
-
+/* ALL SONGS */
   table {
     width: 20%;
     margin: auto;

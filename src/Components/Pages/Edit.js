@@ -5,7 +5,9 @@ export default function Edit() {
   return ( 
    <div className="Edit">
     <h1 className="edit-song">Edit Entry</h1>
+    <hr></hr>
     <EditSong />
+
   </div>
 );
 }

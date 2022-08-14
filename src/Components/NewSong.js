@@ -36,6 +36,7 @@ export default function NewSong() {
 
   return (
     <div className="new">
+        <hr></hr>
       <form onSubmit={handleSubmit} autoComplete="off">
         <label className="new-label" htmlFor="name">Name</label>
         <input
